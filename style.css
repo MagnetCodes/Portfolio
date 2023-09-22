@@ -7,7 +7,7 @@
 section {
     padding-top: 128px;
     position: relative;
-    margin-bottom: 96px;
+    margin-bottom: 14%;
 }
 
 section::before {
@@ -143,6 +143,20 @@ section::before {
     content: 'UI/UX Project';
 }
 
+.contact::before {
+    content: 'Contact';
+}
+
+.contact-form {
+    border: 2px solid black;
+    padding: 64px 32px;
+}
+
+.form-label {
+    font-weight: 700;
+
+}
+
 @keyframes upDown {
     0% {
         transform: translateY(0);
@@ -153,4 +167,8 @@ section::before {
     100% {
         transform: translateY(0);
     }
+}
+
+.ct-text {
+    text-align: justify;
 }
