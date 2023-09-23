@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 section {
@@ -50,8 +51,8 @@ section::before {
     font-size: 40px;
 }
 
-.home .foto img {
-    width: 120%;
+.home img {
+    width: 100%;
 }
 
 .home .arrow img {
@@ -84,7 +85,7 @@ section::before {
     content: 'Work';
 }
 
-.work .row .col p {
+.work p {
     text-align: justify;
 }
 
@@ -152,9 +153,61 @@ section::before {
     padding: 64px 32px;
 }
 
+.contact .row-p p {
+    font-size: 12px;
+}
+
 .form-label {
     font-weight: 700;
 
+}
+
+.ct-text {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 80%;
+        margin: 0 0 50px 0;
+    }
+
+    .contact .row-p p {
+        font-size: 8px;
+    }
+
+    .ct-text {
+        font-size: 10px;
+    }
+
+    .work p {
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .about p {
+        font-size: 10px;
+        text-align: justify;
+    }
+    
+    .home h3 {
+        font-size: 24px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .home p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        font-size: 50px;
+        top: 45px;
+    }
 }
 
 @keyframes upDown {
@@ -167,8 +220,4 @@ section::before {
     100% {
         transform: translateY(0);
     }
-}
-
-.ct-text {
-    text-align: justify;
 }
